@@ -1,0 +1,232 @@
+:root
+{ 
+    --background: #0f0e17;
+    --button: #ff8906;  
+    --text: #a7a9be;
+    --buttonText: #fffffe;
+    --bordes: black;
+    --secundario: #f25f4c;
+    --terciario:#e53170;
+}
+
+/* Tablets */
+
+
+@media (max-width: 992px) 
+{
+     .navbar {
+        gap: 10px;
+    }
+
+    .carrito {      
+        height: 40px;
+    }
+
+    .lista{
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        background: linear-gradient(to bottom, var(--terciario), var(--button)); 
+        border-radius: 0px 0px 15px 15px;  
+        border: 2px solid var(--buttonText); 
+        display: none; 
+       
+        
+    }
+
+    .lista a{
+        font-size: 18px;
+    }
+
+    .menuLabel{
+        display: flex;
+        order: 2;
+        cursor: pointer;
+    }
+
+    .menu-icon{
+        width: 25px;
+        height: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    #menu-toggle:checked + .lista
+    {
+        visibility: visible;
+        display: inline-block;
+    }
+
+    .heroInfo{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .heroInfo h1 {
+        width: 90%;
+        max-width: 500px;
+        min-width: unset;
+    }
+
+    .heroInfo p {
+        width: 60%;
+        max-width: 600px;
+    }
+
+    .heroCard{
+        display: none;
+    }
+
+    #cards
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cardsContainer
+    {
+        max-width: 80%;
+    }
+
+    .cardBtn
+    {
+        display: flex;         
+    }
+
+    #contacto
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+   /**/
+}
+
+
+@media (max-width: 576px)
+{
+
+    .navbar {
+        gap: 10px;
+    }
+
+    .carrito {      
+        height: 40px;
+    }
+
+    .lista{
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        background: linear-gradient(to bottom, var(--terciario), var(--button)); 
+        border-radius: 0px 0px 15px 15px;  
+        border: 2px solid var(--buttonText); 
+        display: none; 
+       
+        
+    }
+
+    .lista a{
+        font-size: 18px;
+    }
+
+    .menuLabel{
+        display: flex;
+        order: 2;
+        cursor: pointer;
+    }
+
+    .menu-icon{
+        width: 25px;
+        height: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    #menu-toggle:checked + .lista
+    {
+        visibility: visible;
+        display: inline-block;
+    }
+
+    .heroInfo{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .heroInfo h1 {
+        width: 90%;
+        max-width: 500px;
+        min-width: unset;
+    }
+
+    .heroInfo p {
+        width: 60%;
+        max-width: 600px;
+    }
+
+    .heroCard{
+        display: none;
+    }
+
+    #cards
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cardsContainer
+    {
+        max-width: 80%;
+    }
+
+    .cardBtn
+    {
+        display: flex;         
+    }
+
+    #contacto
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
